@@ -1,5 +1,8 @@
 ﻿namespace Devkot.Aspire.Hosting.EventStore
 {
+    /// <summary>
+    /// Config class for managing event store settings
+    /// </summary>
     public class EventStoreConfig
     {
         public int ClusterSize { get; set; } = 1;

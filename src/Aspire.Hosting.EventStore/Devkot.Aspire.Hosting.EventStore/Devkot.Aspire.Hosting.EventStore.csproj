@@ -12,7 +12,28 @@
 	<Version>0.0.0.1</Version>
     <AssemblyVersion>0.0.0.1</AssemblyVersion>
 	  <IsPackable>true</IsPackable>
+	  <Optimize>true</Optimize>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageIcon>favicon-32x32.png</PackageIcon>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <Company>Devkot</Company>
+	  <Description>Aspire.Hosting.EventStore package</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\favicon-32x32.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.3.24105.21" />

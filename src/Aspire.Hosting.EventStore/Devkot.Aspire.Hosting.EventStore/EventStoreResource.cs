@@ -1,5 +1,9 @@
 ﻿namespace Devkot.Aspire.Hosting.EventStore
 {
+    /// <summary>
+    /// EventStore aspire hosrting resource
+    /// </summary>
+    /// <param name="name"></param>
     public class EventStoreResource(string name) : ContainerResource(name), IResourceWithConnectionString
     {
         /// <summary>
