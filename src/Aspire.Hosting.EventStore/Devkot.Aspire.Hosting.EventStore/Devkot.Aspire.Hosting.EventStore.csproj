@@ -11,6 +11,7 @@
     <PackageTags>aspire hosting eventstore</PackageTags>
 	<Version>0.0.0.1</Version>
     <AssemblyVersion>0.0.0.1</AssemblyVersion>
+	  <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
