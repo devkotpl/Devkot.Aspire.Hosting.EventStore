@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devkot.Aspire.Hosting.EventStore", "Aspire.Hosting.EventStore\Devkot.Aspire.Hosting.EventStore.csproj", "{29A1EA6B-D9E1-42BB-B7B3-D34B985D2B0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devkot.Aspire.Hosting.EventStore", "Devkot.Aspire.Hosting.EventStore\Devkot.Aspire.Hosting.EventStore.csproj", "{29A1EA6B-D9E1-42BB-B7B3-D34B985D2B0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
