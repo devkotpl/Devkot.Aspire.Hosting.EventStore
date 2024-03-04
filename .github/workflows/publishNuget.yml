@@ -31,11 +31,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln
     - name: Build
-      run: dotnet build src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln -p:Version=0.0.0.${{github.run_number}}
+      run: dotnet build src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln
     - name: Test
       run: dotnet test src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --verbosity normal
     - name: Publish
-      run: dotnet pack src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --configuration Release --output ${{ env.NuGetDirectory }} --version-suffix rc.${{github.run_number}}
+      run: dotnet pack src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --configuration Release --output ${{ env.NuGetDirectory }} -p:Version=0.0.0-preview.${{github.run_number}}
     - uses: actions/upload-artifact@v3
       with:
         name: nuget
