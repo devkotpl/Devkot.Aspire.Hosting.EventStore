@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
     <Title>Aspire.Hosting.EventStore</Title>
     <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/devkotpl/Devkot.Aspire.Hosting.EventStore.git</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/devkotpl/Devkot.Aspire.Hosting.EventStore.git</RepositoryUrl>
+    <PackageTags>aspire hosting eventstore</PackageTags>
+	<Version>0.0.0.1</Version>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
