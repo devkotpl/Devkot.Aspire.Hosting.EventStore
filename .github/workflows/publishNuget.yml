@@ -29,13 +29,13 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln
     - name: Build
-      run: dotnet build --no-restore -p:Version=1.0.0.${{github.run_number}}
+      run: dotnet build src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --no-restore -p:Version=1.0.0.${{github.run_number}}
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --no-build --verbosity normal
     - name: Publish
-      run: dotnet pack --configuration Debug --output ${{ env.NuGetDirectory }} --version-suffix rc.${{github.run_number}}
+      run: dotnet pack src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --configuration Debug --output ${{ env.NuGetDirectory }} --version-suffix rc.${{github.run_number}}
     - uses: actions/upload-artifact@v3
       with:
         name: nuget
@@ -74,7 +74,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Run tests
-      run: dotnet test --configuration Release
+      run: dotnet test src/Aspire.Hosting.EventStore/Devkot.Aspire.Hosting.EventStore.sln --configuration Release
 
   deploy:
     # Publish only when creating a GitHub Release
